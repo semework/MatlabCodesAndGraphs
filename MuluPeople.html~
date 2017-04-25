@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="file:///Users/mulugetasemework/Documents/MuluSite/MuluStyle.html">
+<div style="background-color:white;z-index:-1;width:100%;height:100%;align:center;"> 
+
+			  <div class="col1" style="z-index: 2;width:100%;background-color:092012;margin:0;padding:0;">
+					<img src=" " alt="" id="img4"  
+					style="float:left;margin:2%;margin-right:10%;width:15%;height:auto:max-width:50%;max-height:50%">
+		<p style="color:gold;font-size:1.6em;align:center;text-align:center;text-justify:center"> <strong style="color:red;font-size:1.6em;"></strong>  </p>
+			</div>
+</div>
+ 
+<div id="wrapper" align="center" style="background-color:gold">
+	<input class="buttons" value="Home" onclick="window.location.href='file:///Users/mulugetasemework/Documents/MuluSite/MuluHome.html' " >
+	<input class="buttons"  value="Science" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluScience.html' ">
+	<input class="buttons" style="background-color:#7f6b00"  value="Art" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluPeople.html' ">
+	<input class="buttons"  value="Publications" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluPublications.html' ">
+	<input class="buttons"  value="Side Projects" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluSideProects.html' ">
+	<input class="buttons"  value="Contact" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluContact.html' ">
+</div>
+
+<h3 style="padding-top:1%;background-color:#3F3A54;color:gold;font-size:1.6em;">My art life </h3>
+</head>
+
+<hr size="1" color="red">
+
+<div style="background-color:white;z-index:-1">
+	<div id="wrapper" align="center"   style="background-color: none;text-align:center;align:center;color:green;"><!-- #FFC2C2 -->
+		<input class="buttonsTiny" value="Current Postdocs" type="submit" class="submit" onclick="location.href = '#Current Postdocs'" name="action" >
+		<input class="buttonsTiny" value="Current Students" type="submit" class="submit" onclick="location.href = '#Current Students'" name="action" >
+		<input class="buttonsTiny" value="Scientific Alumni"  type="submit" class="submit" onclick="location.href = '#Scientific Alumni'" name="action" >
+		<input class="buttonsTiny" value="Staff"  type="submit" class="submit" onclick="location.href = '#Staff'" name="action" >
+	</div>
+</div>
+
+<hr size="1" color="red">
+
+
+<div class="emptyGallery" style="background-color:none;border:none;" id="Current Postdocs"><!-- #DAF5B8 -->
+	<h3 style="align:center;padding:1%;">Books</h3>
+	<!-- <hr size="1" color="red" > -->
+	  <a href="https://www.amazon.com/Love-Another-Country-Mulugeta-Semework/dp/0595436668/ref=sr_1_4?ie=UTF8&qid=1490208980&sr=8-4&keywords=love+in+another+country">
+		<figure style="padding:2%;">
+		  <img src="/Users/mulugetasemework/Documents/MuluSite/mulu_book_Cover.png" alt="" 
+		  style="width:auto;height:auto:max-width:auto;max-height:auto ;border:2px solid #002b7F">
+		  <figcaption style="text-align:left">
+		   Love in Another Country, 2007
+		  </figcaption>
+		</figure>
+	  </a>
+	  
+</div> 
+
+
+
+<hr size="3" color="red">
+
+<p class="p" style="font-size:.7em;text-align:center;background-color:#3F3A54;color:white">
+Last updated: 03/20/2017    &#169 All rights reserved. Site by Mulugeta Semework. 
+<a href="/Users/mulugetasemework/Documents/WebsiteData/GoldbergHome.html" target="_blank" >
+<strong style="font-size:.8em;background-color:white;"> Go to Goldberg Lab Homepage </strong></a></p>
+</html>

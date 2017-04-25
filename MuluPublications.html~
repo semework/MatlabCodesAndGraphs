@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="description" content="Mulugeta Semework Abebe website">
+<meta name="keywords" content="Mulugeta Semework Abebe">
+
+<link rel="stylesheet" type="text/css" href="file:///Users/mulugetasemework/Documents/MuluSite/MulugetaStyle.html">
+<div style="background-color:white;z-index:-1;width:100%;height:100%;align:center;margin-top:-2%;"> 
+	<div class="col1" style="z-index: 2;width:100%;background-color:092012;margin:0;padding:0;">
+	  <p style="color:gold;font-size:1.6em;align:center;text-align:center;text-justify:center;margin-bottom:-0.5%;"> <strong style="color:red;font-size:1.6em;">Publications </strong></strong>   </p>
+	 </div>
+</div>
+ 
+<div id="wrapper" align="center" style="background-color:gold;margin-top:-2%;">
+	<input class="buttons" value="Home" onclick="window.location.href='file:///Users/mulugetasemework/Documents/MuluSite/MuluHome.html' " >
+	<input class="buttons"  value="Science" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluScience.html' ">
+	<input class="buttons"  value="Art" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluArt.html' ">
+	<input class="buttons"  style="background-color:red; color:white;" value="Publications" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluPublications.html' ">
+	<input class="buttons"  value="Side Projects" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluSideProects.html' ">
+	<input class="buttons"  value="About" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluContact.html' ">
+</div>
+
+<h3 style="padding-top:1%;background-color:#F1E0E0;color:#FF7B78;font-size:1.6em;margin-top:-0.5%;"> ... and presentations/posters ...  </h3>
+ </head>
+
+
+<hr size="1" color="red">
+
+
+<div id="wrapper" align="center"   style="background-color: none;text-align:center;align:center;color:green;"><!-- #FFC2C2 -->
+	<input class="buttonsTiny" value="Peer-reviewed" type="submit" class="submit" onclick="location.href = '#Peer'" name="action" >
+	<input class="buttonsTiny" value="Invited review" type="submit" class="submit" onclick="location.href = '#Invited'" name="action" >
+	<input class="buttonsTiny" value="Conference Papers/presentations" type="submit" class="submit" onclick="location.href = '#Conference'" name="action" >
+	<input class="buttonsTiny" value="Posters & Abstracts" type="submit" class="submit" onclick="location.href = '#Posters'" name="action" >
+</div>
+
+
+
+
+<hr size="3" color="red">
+<!-- --------------------- -->
+<div class="mainTextWide" style="align:center;border:none;" id="RECENT PAPERS">
+
+	<h3 align="center">Peer-reviewed</h3>
+	<!-- --------------------- -->
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong>, S. C. Steenrod, Goldberg, M. E. (In submission). (2016). <strong class="pStrong"> 
+A neural substrate for environmental memory in lateral intraparietal area (LIP).</strong>NNS.
+
+<p class="p" text-align="justify">	<strong>Semework M</strong>. (2015). <strong class="pStrong"> A Customizable 
+Multimodality Imaging Compound That Relates External Landmarks to Internal Structures. </strong>
+J Nucl Med Technol. 2015 Dec;43(4):267-74. doi: 10.2967/jnmt.115.162404.
+
+<p class="p" text-align="justify">	Song W, <strong>Semework M</strong>. (2015). <strong class="pStrong"> 
+Tactile representation in somatosensory thalamus (VPL) and cortex (S1) of awake primate 
+and the plasticity induced by VPL neuroprosthetic stimulation. </strong>
+Brain Res. Sep 5. 2015. pii: S0006-8993(15)00697-6. doi: 10.1016/j.brainres.2015.08.046. PMID: 26348987
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong> and M. DiStasio. (2014). <strong class="pStrong"> 
+Short-term dynamics of causal information transfer in thalamocortical 
+networks during natural inputs and microstimulation for somatosensory neuroprosthesis.</strong> Front Neuroeng 7: 36.
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong>, Subrata, S. (2011). <strong class="pStrong"> 
+Major safety and ethical concerns in brain stimulation.</strong> Ethics in biology, engineering, & medicine 2(4). 305-316.
+
+<p class="p" text-align="justify">	Chhatbar, P., vonKraus, L., <strong>Semework, M.</strong>, 
+and Francis, J. T. (2010). <strong class="pStrong"> A Bio-friendly and Economical 
+Technique for Chronic Implantation of Multiple Microelectrode Arrays.</strong> J Neurosci Methods. 2010 May 15;188(2):187-94.
+
+
+</div>
+
+
+
+<!-- ----------------------------------------------------------------------------  -->
+<hr size="3" color="red">
+
+<div class="mainTextWide" style="align:center;border:none;background-color:#ECF7FF;" id="Classics">
+	<!-- --------------------- -->
+	<h3 align="center">Invited Review</h3>
+	<!-- --------------------- -->
+
+	
+<p class="p" text-align="justify"><strong>Semework, M.</strong> (2015).  <strong class="pStrong"> Microstimulation: techniques, 
+basic principles and somatosensory neuroprosthesis approaches. </strong>Critical Reviews in Biomedical Engineering. 
+<a href="http://www.dl.begellhouse.com/journals/4b27cbfc562e21b8,7cbe4f10305b0c97,0713a2647b86227b.html"> 2015;43(1):61-95.</a> PMID: 26351023</p>
+</div>
+
+
+<!-- ----------------------------------------------------------------------------  -->
+<hr size="3" color="red">
+<div class="mainTextWide" style="align:center;border:none;" id="Reviews">
+	<p class="p" style="font-size:.9em;align:left;margin-top:-1%"><a href="/Users/mulugetasemework/Documents/WebsiteData/GoldbergHome.html" target="_blank" style="font-size:.9em">Home</a>
+	<a href="/Users/mulugetasemework/Documents/WebsiteData/GoldbergPublications.html" target="_blank" style="font-size:.9em;float:right">Publications</a>
+	</p>
+
+	<!-- --------------------- -->
+	<h3 align="center">Conference Papers/presentations</h3>
+	<!-- --------------------- -->
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong> (2015). <strong class="pStrong"> Laboratory 
+based research in Neuroscience. 8th Global Ethiopian Diaspora Conference on Healthcare and Medical Education.</strong>
+ September 17, 2016. Washington, DC.</p>
+ 
+<p class="p" text-align="justify">	<strong>Semework, M.</strong>, 2013. <strong class="pStrong"> Retinotopic 
+and spatial responses in monkey parahippocampal gyrus. Platform presentation at: 
+Gordon Research Seminar on Eye Movements (GRS).</strong>  Stonehill College, MA. July 6-7.</p>
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong>, 2013. <strong class="pStrong"> 
+“He/She is A Jerk, but Genius!”: Humane Treatment of Humans in Research. </strong>
+Platform presentation at: 7th International Conference on Ethical Issues in Biomedical Engineering; Brooklyn, NY.</p>
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong>, 2011. <strong class="pStrong"> 
+Brain Microstimulation Ethical Concerns.</strong> Platform presentation at: 6th 
+International Conference on Ethical Issues in Biomedical Engineering; Brooklyn, NY.</p>
+
+<p class="p" text-align="justify">	Seth, S., Brockmeier, A., Choi, J., <strong>Semework M</strong>., 
+Francis, J. T. 2011. <strong class="pStrong"> Evaluating dependence in spike train 
+metric spaces.</strong> International Joint Conference on Neural Networks. San Jose, California.</p>
+
+<p class="p" text-align="justify">	Seth, S., II, Park, Brockmeier, A., <strong>Semework, M.</strong>, Choi, 
+J., Francis, J., Principe, J. 2010. <strong class="pStrong"> A novel family of 
+non-parametric cumulative based divergences for point processes.</strong> In Lafferty, J., 
+Williams, C., Shawe-Taylor, J., Zemel, R., Culotta, A. (Eds.), Advances in Neural 
+Information Processing Systems 23. 2119-2127.</p>
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong>, 2010. <strong class="pStrong"> Brain Electrical 
+Stimulation Ethical and Safety Issues.</strong> (Platform presentation, abstract published). 
+K.E. Herold, W.E. Bentley, and J. Vossoughi (Eds.): SBEC 2010, IFMBE.</p>
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong>, 2010. <strong class="pStrong"> A Simple Structural 
+Magnetic Resonance Imaging (MRI) Method for 3D Mapping Between Head Skin Tattoos 
+and Brain Landmarks.</strong> (Platform presentation, abstract published). K.E. Herold, W.E. Bentley, 
+and J. Vossoughi (Eds.): SBEC 2010, IFMBE.</p>
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong>, 2010. <strong class="pStrong"> A Simple 
+Structural Magnetic Resonance Imaging (MRI) Method for 3D Mapping Between Head Skin 
+Tattoos and Brain Landmarks.</strong> K.E. Herold, W.E. Bentley, and J. Vossoughi (Eds.): SBEC 2010, 
+IFMBE Proceedings 32, pp. 493–495.</p>
+
+
+</div>
+
+
+<!-- ----------------------------------------------------------------------------  -->
+<hr size="3" color="red">
+
+<div class="mainTextWide" style="align:center;border:none;background-color:#ECF7FF;text-align:justify;" id="2010-2015">
+	<p class="p" style="font-size:.9em;align:left;margin-top:-1%"><a href="/Users/mulugetasemework/Documents/WebsiteData/GoldbergHome.html" target="_blank" style="font-size:.9em">Home</a>
+	<a href="/Users/mulugetasemework/Documents/WebsiteData/GoldbergPublications.html" target="_blank" style="font-size:.9em;float:right">Publications</a>
+	</p>
+
+	<!-- --------------------- -->
+	<h3 align="center">Posters & Abstracts</h3>
+	<!-- --------------------- -->
+<p class="p" text-align="justify">	<strong>Semework, M.</strong>, Goldberg, M. E. 2016. <strong class="pStrong"> 
+Parahippocampal gyrus neurons in the monkey respond to stimuli in the entire visual field 
+except for the foveal region.</strong> Poster presented at: Society for Neuroscience Annual Meeting 2016; San Diego, CA</p>
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong> 2014. <strong class="pStrong"> A novel composition 
+for use in imaging procedures.</strong> Poster presented at: Society for Neuroscience Annual Meeting 2014; Washington, DC.</p>
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong>, Goldberg, M. E. 2013. <strong class="pStrong"> Retinotopic 
+and spatial responses in monkey parahippocampal gyrus.</strong> Poster presented at: 
+Gordon Research Conference: Eye Movements (GRC).  Stonehill College, MA. July 7-12.</p>
+
+<p class="p" text-align="justify">	<strong>Semework M</strong>., Kao T, Goldberg M. E. 2012. <strong class="pStrong"> LIP Environmental memory: 
+source, importance and mechanisms of action.</strong> Poster presented at: 
+European Summer School on Visual Neuroscience. Rauischholzhausen, Germany. Aug 19 - 31 2012.</p>
+
+<p class="p" text-align="justify">	Song, W., <strong>Semework, M.</strong>, Francis, J. T. 2011. <strong class="pStrong"> Neuronal 
+cortical network reorganization after microstimulation in thalamus (VPL) and somatosensory cortex (S1).</strong>  
+Poster presented at: Society for the Neural Control of Movement 20th Annual Conference; San Juan, PR.</p>
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong>, Xu, S., Chhatbar, P., Francis, J. T. 2011. <strong class="pStrong"> 
+Somatosensory Neuroprosthesis via Microstimulation: Comparison between S1 Cortex vs. VPL Thalamus.</strong>
+ Poster presented at: Society for Neuroscience Annual Meeting 2011; Washington, DC.</p>
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong>, Xu, S., Choi, J. and Francis, J. T. 2010. <strong class="pStrong"> Somatosensory 
+Neuroprosthesis: Custom-fitting Microstimulation Parameters.</strong>
+ Poster presented at: Society for the Neural Control of Movement 19th Annual Conference; Naples, FL.</p>
+
+<p class="p" text-align="justify">	Xu, S., Hawley, E., von Kraus, L., <strong>Semework, M.</strong>, Chapin, 
+J. K., and Francis, J. T. 2010. <strong class="pStrong"> A multichannel constant current 
+stimulator for intracortical stimulation.</strong> Poster presented at: Society 
+for Neuroscience Annual Meeting 2010; San Diego, CA.</p>
+
+<p class="p" text-align="justify">	Chhatbar, P., <strong>Semework, M.</strong>, Xu, S., Marsh, B., 
+Francis, J. T. 2010. <strong class="pStrong"> Force Control in 
+Brain-Machine Interface.</strong> Poster presented at: Society for Neuroscience 
+Annual Meeting 2010; San Diego, CA.</p>
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong>, Xu, S., Francis, J. T. 
+2010. <strong class="pStrong"> Mapping Direct Responses and Afferent Modulation in 
+Thalamo-cortical Networks in Microstimulation for Somatosensory Neuroprosthesis.</strong>
+ Poster presented at: Society for Neuroscience Annual Meeting 2010; San Diego, CA.</p>
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong>, Song, W., Xu, S., Francis, J. T. 2010. <strong class="pStrong"> 
+Microstimulation in Awake Monkey with Chronic Ventral Posterolateral Thalamus (VPL) 
+and Somatosensory Cortex (S1) Implants.</strong> Poster presented at: DARPA Neural 
+Engineering, Science, and Technology (NEST) Forum. San Diego, CA.</p>
+
+<p class="p" text-align="justify">	Chhatbar, P., <strong>Semework, M.</strong>, Francis, J. T. 2009. <strong class="pStrong"> 
+Relationship between Neural Activity in Multiple Sensorimotor Cortices and Force-related 
+Variables during Primate Reaching Movements.</strong> Poster presented at: Society for 
+Neuroscience Annual Meeting 2009; Chicago, IL.</p>
+
+<p class="p" text-align="justify">	Xu, S., <strong>Semework, M.</strong>, Rozenboym, A.V., Chhatbar, P.Y., 
+Francis, J. T. and Chapin, J. K. 2009. <strong class="pStrong"> Neurophysiological Effects 
+of Microstimulation in Rat and Monkey Somatosensory Thalamus.</strong> Poster presented at: 
+Society for Neuroscience Annual Meeting 2009; Chicago, IL.</p>
+
+<p class="p" text-align="justify">	Chhatbar, P., <strong>Semework, M.</strong>, vonKraus, L., Rozenboym, A., 
+Francis, J. T. 2009. <strong class="pStrong"> Long-term Stability of Cortical 
+Neural Ensemble Recordings Between Different Microelectrode Array Types. </strong>
+Poster presented at: Society for the Neural Control of Movement 19th Annual Conference; Waikoloa, HI.</p>
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong>, Chhatbar, P., Rozenboym, A.V., 
+vonKraus, L., Xu, S., Chapin, J. K., and Francis, J. T. 2009. <strong class="pStrong"> 
+Somatosensory Neuroprosthesis: Where Best to Stimulate: Peripheral, VPL or Cortical?</strong>
+ Poster presented at: Society for the Neural Control of Movement 19th Annual Conference; Waikoloa, HI.</p>
+
+<p class="p" text-align="justify">	Francis, J. T., Rozenboym, A., <strong>Semework, M.</strong>, Chhatbar,
+ P., Chapin, J. K. 2008. <strong class="pStrong"> On the Way to a Somatosensory 
+ Neuroprosthesis.</strong> Poster presented at: From the Bench to the Bedside: 
+ The Latest Discoveries in SCI research at NYAS; New York, NY.</p>
+
+<p class="p" text-align="justify">	Chhatbar, P., <strong>Semework, M.</strong>, von Kraus, L., Francis, J. 
+T. 2008. <strong class="pStrong"> Comparison Study of the Long-term Stability of 
+Cortical Neural Ensemble Recordings Between Different Types of Microelectrode 
+Arrays.</strong> Poster presented at: Society for Neuroscience Annual Meeting 2008; Washington, DC.</p>
+
+<p class="p" text-align="justify">	<strong>Semework, M.</strong>, Chhatbar, P., von Kraus, L., 
+Hawley, E., Xu, S., Chapin, J. K., and Francis, J. T. 2008. <strong class="pStrong"> 
+Can Microstimulation in the Proprioceptive Brain Areas Mimic Novel Dynamic Force 
+Perturbations Applied to the Arm?</strong> Poster presented at: Society for Neuroscience Annual Meeting 2008; Atlanta, GA.</p>
+
+
+</div>
+
+
+
+
+
+
+
+<hr size="3" color="red">
+
+<p class="p" style="font-size:.9em;text-align:center;background-color:#3F3A54;color:white">
+Last updated: 03/20/2017    &#169 All rights reserved. Site by Mulugeta Semework. 
+<a href="file:///Users/mulugetasemework/Documents/MuluSite/MuluHome.html" target="_blank" >
+<strong style="font-size:.9em;background-color:white;"> Go to Homepage </strong></a></p>
+</html>
+
