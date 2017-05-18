@@ -1,429 +1,385 @@
-
 <!DOCTYPE html>
-
 <html>
-<head>
-<meta charset="utf-8">
-
-<meta name="description" content="Mulugeta Semework Abebe website">
-<meta name="keywords" content="Mulugeta Semework Abebe">
-<body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;">
-<link rel="stylesheet" type="text/css" href="/Users/mulugetasemework/Documents/MuluSite/MulugetaStyle.css">
-<div style="background-color:white;z-index:-1;width:100%;height:100%;align:center;margin-top:-2%;"> 
-	<div class="col1" style="z-index: 2;width:100%;background-color:092012;margin:0;padding:0;">
-	  <p style="color:gold;font-size:1.6em;align:center;text-align:center;text-justify:center;margin-bottom:-0.5%;"> <strong style="color:red;font-size:1.6em;">Side Projects </strong></strong>   </p>
-	 </div>
-</div>
- 
-<div id="wrapper" align="center" style="background-color:gold;margin-top:-2%;">
-	<input class="buttons" value="Home" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluHome.html' " >
-	<input class="buttons"  value="Science" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluScience.html' ">
-	<input class="buttons"  value="Art" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluArt.html' ">
-	<input class="buttons"  value="Publications" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluPublications.html' ">
-	<input class="buttons" style="background-color:red; color:white;"  value="Side Projects" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluSideProects.html' ">
-	<input class="buttons"  value="About" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluContact.html' ">
-</div>
-
-<h3 style="padding-top:1%;background-color:#F1E0E0;color:#FF7B78;font-size:1.6em;margin-top:-0.5%;">My delightful destructions ... </h3>
- </head>
-
-
-
-
-<hr size="1" color="red">
-<div style="background-color:white;z-index:-1">
-	<div id="wrapper" align="center"   style="background-color: none;text-align:center;align:center;color:green;"><!-- #FFC2C2 -->
-		<input class="buttonsTiny" value="Finance Tool" type="submit" class="submit" onclick="location.href = '#Finance Tool'" name="action" >
-		<input class="buttonsTiny" value="MRI Tool" type="submit" class="submit" onclick="location.href = '#MRI Tool'" name="action" >
-		<input class="buttonsTiny" value="Eye Tracking Tool"  type="submit" class="submit" onclick="location.href = '#Eye Tracking Tool'" name="action" >
-		<input class="buttonsTiny" value="Music Player Tool"  type="submit" class="submit" onclick="location.href = '#Music Player Tool'" name="action" >
-	</div>
-</div>
-<hr size="3" color="red">
-		 
-<div class="emptyGallery" style="background-color:none;border:none;width:85%;align:center;font-size:1.3em;" id="Finance Tool"><!-- #DAF5B8 -->
-	    <h3 style="align:center;padding:1%;font-size:1.3em;margin-top:-2%;">Finance Tool
-		  <strong  style="color:#FF7B78;font-size:.8em;margin-top:-5%;">       - - - -  -    -   -  Calculate your investment prospects here </strong>   		
-				<p class="p" style="text-align:justify;background-color:white;color:#0A0D29;font-size:.7em;">How much could  <strong class="YOUS" style="font-size:1.3em;"> 
-				 you </strong> and the <strong class="IRSS" style="font-size:1.2em;color:red;">IRS </strong> make? Check here! ( Type in your inputs or use the sliders)   
-	          <a href="/Users/mulugetasemework/DocumentsMuluSite/Muluhelper.html" style="font-size:.7em;">   
-	        (Click here for more help or read text below) </a>
-			For more information about financial terms, compounding, net income, etc.
-	         <a href="/Users/mulugetasemework/Documentshttp://www.investopedia.com/" style="font-size:.7em;">  
-	            Click here and go to Investopedia </a></p>
-				</p></h3>	
-</div>
-
-</head>
-
-<div class="emptyGallery" style="background-color:none;border:none;width:85%;align:center;z-index:16;" id="Finance Tool"><!-- #DAF5B8 -->
-
-        <div class="col1" style="background:none;width:50%;margin-top:-4%;background:#3F3A54;z-index:25;">
-      	           <div class="col1" style="width:28%;background:#3F3A54;z-index:25;">
-						<br/>
-						<br/>
-
-					   <p style="font-size:1.3em;color:white;">
-						Investment (US$) = <span id="InvestmentSpan" aria-valuenow="1" aria-valuemin="1" 
-						aria-valuemax="100000000" role="slider">1</span>
-						<br/>
-
-						<input type="range" class="InvestmentSlider" min="1" max="100000000" value="1" 
-						step="1" onChange="InvestChange(this.value)" />
-						<br/>
-						<input type="number" id="InvestmentIn" value="1" min="1" max="100000000" 
-						onChange="InvestChange(this.value)" />
-
-
-
-						<br/>
-						<br/>
-
-						Interest (%) = <span id="InterestSpan" aria-valuenow="3" aria-valuemin="1" 
-						aria-valuemax="1000" role="slider">1</span>
-						<br/>
-
-						<input type="range" class="InterestInSlider" min="1" max="1000" value="3" 
-						step="1" onChange="InterestChange(this.value)" />
-						<br/>
-						<input type="number" id="InterestIn" value="1" min="1" max="1000" 
-						onChange="InterestChange(this.value)" />
-
-						<br/>
-						<br/>
-
-
-						Tax (%) = <span id="taxSpan" aria-valuenow="40" aria-valuemin="1" 
-						aria-valuemax="100" role="slider">40</span>
-						<br/>
-						<input type="range" class="taxSlider" min="1" max="100" value="40" 
-						step="1" onChange="taxChange(this.value)" />
-						<br/>
-						<input type="number" id="taxIn" value="40" min="1" max="100" 
-						onChange="taxChange(this.value)" />
-
-						<br/>
-						<br/>
-
-		              </p>
-				 </div>
-				<!--  <hr size="1" color="red" margin="0%"> -->
-				 <div class="col1" style="background:none;width:28%;z-index:15;">
-						<!--  <hr size="1" color="red" margin="0%"> -->
-						 <h3 style="align:center;padding:1%;"></h3>
-		                  <p style="font-size:1.3em;color:white">
-								Compound frequency <br/> per year (%) = <span id="CompSpan" aria-valuenow="1" aria-valuemin="1" 
-							aria-orientation="vertical" aria-valuemax="2920" role="slider" >1</span>
-							<br/>
-							<input type="range" class="CompSlider" min="1" max="2920" value="1" 
-							step="1" onChange="CompChange(this.value)" />
-							<br/>
-							<input type="number" id="CompIn" value="1" min="1" max="2920" 
-							onChange="CompChange(this.value)" />
-
-							<br/>
-
-
-							(or click <span  >below)</span>
-							<br/>
-		                   <p>
-
-							<form name = "f1" style="font-size:1.3em;color:white">
-
-							<input type = "radio" name = "r1" value = "Off" onclick="GetSelectedItem5(this)" >5 days a week
-							<br/>
-							<input type = "radio" name = "r1" value = "Off" onclick ="GetSelectedItem3(this)">3 days a week
-
-							<br/>
-							<input type = "radio" name = "r1" value = "Off" onclick ="GetSelectedItemWeek(this)">Weekly
-
-							<br/>
-							<input type = "radio" name = "r1" value = "Off" onclick ="GetSelectedItemFortnight(this)">Every 2 weeks
-
-							<br/>
-							<input type = "radio" name = "r1" value = "Off" onclick ="GetSelectedItemMonth(this)">Monthly
-
-							<br/>
-							<input type = "radio" name = "r1" value = "Off" onclick ="GetSelectedItemQuarter(this)">Quarterly
-
-							<br/>
-							<input type = "radio" name = "r1" value = "Off" onclick ="GetSelectedItem6Month(this)">Twice a year
-
-							<br/>
-							<input type = "radio" name = "r1" value = "Off" onclick ="GetSelectedItemYear(this)">Once a year
-
-							</form>
-							<br/>
-							</p>
-				 </div>
-	 
-				 <div class="col1" style="background:none;width:28%;z-index:15;">
-							<!--  <hr size="1" color="red" margin="0%"> -->
-							 <h3 style="align:center;padding:1%;"></h3>
-
-
-						<h5  style="font-size:1.4em;color:white">
-						<strong id="YOUS">Your </strong> income  (US$) =  <span id="YourIncomes" style="color:gold;">0</span> 
-						</h5>
-
-						<h6  style="font-size:1.4em;color:white">
-						<strong id="IRSS">IRS</strong> takes (US$) =  <span id="IRSgets" style="color:red;">0</span> 
-						</h6>
-
-
-						<br/>
-
-
-						<script id="calculateReturn" type="text/javascript">
-
-							var investment =1;
-							var interest = 1;
-							var tax = 40;
-							var compound = 1;
-
-
-						  MyIncome = function(investment, interest, tax,compound) 
-						  {
-
-								this.investment = investment;
-								this.interest = interest;
-								this.tax = tax;
-								this.compound = compound;
-									var yourRealIncome2 = this.investment;
-									var IRSIncome2 = 0;
-									var thisReturn2 = 0;
-								yourRealIncomes = function() 
-								 {
-									for (var i = 1; i < this.compound; i+=1) 
-											{
-											thisReturn2 = yourRealIncome2 + (yourRealIncome2*(this.interest/100));
-						// 					var thisTax2 = thisReturn2 * (this.tax/100);
-											//var thisReturn -= thisReturn2 * (this.tax/100);
-											yourRealIncome2 += (thisReturn2 - (thisReturn2 * (this.tax/100)));
-											IRSIncome2 += (thisReturn2 * (this.tax/100));
-										//	alert([this.compound,  parseFloat(yourRealIncome2).toFixed(2),i]);	
-
-						// 					document.getElementById('YourIncomes').innerHTML = yourRealIncome2;
-						// 					document.getElementById('IRSgets').innerHTML = parseInt(IRSIncome2);	
-
-											//alert([this.compound, i]);		
-											//return yourRealIncome2;
-										  }
-											document.getElementById('YourIncomes').innerHTML = parseFloat(yourRealIncome2).toFixed(2);
-											document.getElementById('IRSgets').innerHTML = parseFloat(IRSIncome2).toFixed(2);	
-									//alert([this.investment,this.interest,this.tax,this.compound,yourRealIncome2,i]);				
-								   }
-
-								yourRealIncomes();
-								//return yourRealIncome2;
-
-							}	
-	
-							MyIncome(investment, interest, tax,compound);
-
-	
-						self=this;
-						var InvestChange = function(val) {
-
-							document.getElementById('InvestmentSpan').innerHTML   = parseFloat(val).toFixed(0);;
-							document.getElementById('InvestmentIn').value   = parseFloat(val).toFixed(0);;
-							this.tax   = parseFloat(val).toFixed(0);;
-							MyIncome( parseFloat(val).toFixed(0), self.interest, self.tax,self.compound);
-							};
-	
-						InvestChange.prototype = Object.create(MyIncome.prototype);
-
-						self=this;
-						var InterestChange = function(val) {
-
-							document.getElementById('InterestSpan').innerHTML   = parseFloat(val).toFixed(0);;
-							document.getElementById('InterestIn').value   = parseFloat(val).toFixed(0);;
-							this.interest   = parseFloat(val).toFixed(0);;
-							MyIncome(self.investment, parseFloat(val).toFixed(0), self.tax,self.compound);
-						};
-
-
-						InterestChange.prototype = Object.create(MyIncome.prototype);
-
-						self=this;
-						var taxChange = function(val) {
-							document.getElementById('taxSpan').innerHTML   = parseFloat(val).toFixed(0);;
-							document.getElementById('taxIn').value   = parseFloat(val).toFixed(0);;
-							self.tax   = parseFloat(val).toFixed(0);;
-							MyIncome(self.investment, self.interest,  parseFloat(val).toFixed(0),self.compound);
-						};
-
-						taxChange.prototype = Object.create(MyIncome.prototype);
-
-
-
-						self=this;
-						var CompChange = function(val) {
-							document.getElementById('CompSpan').innerHTML   = parseFloat(val).toFixed(0);;
-	
-							document.getElementById('CompIn').value   = parseFloat(val).toFixed(0);;
-							self.compound   = parseFloat(val).toFixed(0);;
-							MyIncome(self.investment, self.interest, self.tax,val);
-						};
-
-						CompChange.prototype = Object.create(MyIncome.prototype);
-
-						self=this;
-						function GetSelectedItem5(btnRadio)
-						{
-						this.compound = 52*5;
-							document.getElementById('CompIn').value = 52*5;
-							document.getElementById('CompSlider').innerHTML= CompChange(52*5);
-							self.compound = 52*5;
-							MyIncome(self.investment, self.interest, self.tax,52*5);
-						};
-
-						GetSelectedItem5.prototype = Object.create(MyIncome.prototype);
-
-						self=this;
-						function GetSelectedItem3(btnRadio)
-						{
-							self.compound = 52*3;
-							document.getElementById('CompIn').value = 52*3;
-							document.getElementById('CompSlider').innerHTML= CompChange(52*3);
-							MyIncome(self.investment, self.interest, self.tax,52*3);
-						};
-						GetSelectedItem3.prototype = Object.create(MyIncome.prototype);
-
-						self=this;
-						function GetSelectedItemWeek(btnRadio)
-						{
-							self.compound = 52;
-							document.getElementById('CompIn').value = 52;
-							document.getElementById('CompSlider').innerHTML= CompChange(52);
-							MyIncome(self.investment, self.interest, self.tax,52);
-						};
-
-						GetSelectedItemWeek.prototype = Object.create(MyIncome.prototype);
-						self=this;
-						function GetSelectedItemFortnight(btnRadio)
-						{
-							document.getElementById('CompIn').value = 26;
-							document.getElementById('compoundSlider').value= CompChange(26);
-							self.compound = 26;
-							MyIncome(self.investment, self.interest, self.tax,26);
-						};
-						GetSelectedItemFortnight.prototype = Object.create(MyIncome.prototype);
-
-
-						self=this;
-						function GetSelectedItemMonth(btnRadio)
-						{
-							self.compound = 12;
-							document.getElementById('CompIn').value = 12;
-							document.getElementById('compoundSlider').value= CompChange(12);
-							MyIncome(self.investment, self.interest, self.tax,12);
-						};
-
-						GetSelectedItemMonth.prototype = Object.create(MyIncome.prototype);
-
-						self=this;
-						function GetSelectedItemQuarter(btnRadio)
-						{
-							document.getElementById('CompIn').value = 4;
-							document.getElementById('compoundSlider').value= CompChange(4);
-							self.compound = 4;
-							MyIncome(self.investment, self.interest, self.tax,4);
-						};
-						GetSelectedItemQuarter.prototype = Object.create(MyIncome.prototype);
-
-						self=this;
-						function GetSelectedItem6Month(btnRadio)
-						{
-							document.getElementById('CompIn').value = 2;
-							document.getElementById('compoundSlider').value=CompChange(2);
-							self.compound = 2;
-							MyIncome(self.investment, self.interest, self.tax,2);
-						};
-						GetSelectedItem6Month.prototype = Object.create(MyIncome.prototype);
-
-						self=this;
-						function GetSelectedItemYear(btnRadio)
-						{
-							self.compound = 1;
-							document.getElementById('CompIn').value = 1;
-							document.getElementById('compoundSlider').value= CompChange(1);
-							MyIncome(self.investment, self.interest, self.tax,1);
-						};
-
-						GetSelectedItemYear.prototype = Object.create(MyIncome.prototype);
-				   </script>
-		        </div>
-		        <div class="col1" style="background-color:#FFFAF1;border:none;align:center;width:100%;margin :0%;z-index:2">
-		        <p class="p" text-align="justify" style="background-color:#FFFAF1;padding-left:-2%;">
-<br/><br/>
-				You can also click on the dials at the bottom of the page to play with your return 
-				(income recalculation, or compounding) frequency.
-			<br/><br/>
-				By adjusting the above values (parameters) your net income can be adjusted and it is 
-				displayed at the bottom of the screen as: "Your income". </p>
-				</div>
-		</div> 
-
-
-	
-
-		<div class="col1" style="background-color:#FFFAF1;border:none;align:center;width:40%;margin-top:-4%;z-index:2">
-			<hr size="1" color="red">
-				<p class="p" text-align="justify" style="background-color:#FFFAF1;">
-				
-				This is a program that calculates your financial gain based on a few parameters.
-				In short, you invest a given amount of money in the stock market and you wait for 
-				the price to go up or down. 
-			<br/><br/>
-				In our program, you can slide the circle, or type your amount, or use the up and down 
-				arrows in the first field (above: Investment (US$) =).
-			<br/><br/>
-				Then, depending on the number of day, days, weeks, months, etc.
-				that the investment is priced again, you will get a return (more money) or a loss (your investment
-				is not giving a good result). There is a limited amount of money that your investment grows 
-				by, which is called "interest rate". For instance, if you invested 100 dollars and in 
-				a week you gain 3 more dollars, your interest rate is 3 percent (%).
-			<br/><br/>
-				You can change this rate by using the slider/arrows/ or typing in the area above:Interest (%).
-			<br/><br/>
-		 				Obviously, you have to pay a certain amount of money to the government from this income, 
-				in what is called "tax". 
-			<br/><br/>
-				The bottom slider adjusts how often your money grows per a given time (in this case a year.)
-				This is called compound frequency. More numbers mean more money for you and the tax collector.
-			<br/><br/>
-
-				</p>
- </div>
-
-</div>
-
-
-<div style="background-color:#FFFCE7;z-index:-1;width:85%;margin-left:auto;margin-right:auto;" id="MRI Tool"><!-- #ECF7FF -->
-	  <hr size="3" color="red">  <h3 style="align:center;padding:1%;font-size:1.3em;margin-top:-2%;">MRI Tool<h3>
-		
-</div>
-		
-<div style="background-color:#FFFCE7;z-index:-1;width:85%;margin-left:auto;margin-right:auto;" id="EYE Tracking Tool"><!-- #ECF7FF -->
-	  <hr size="3" color="red">  <h3 style="align:center;padding:1%;font-size:1.3em;margin-top:-2%;">EYE Tracking Tool<h3>
-		
-</div>
-
-<div style="background-color:#FFFCE7;z-index:-1;width:85%;margin-left:auto;margin-right:auto;" id="Music Player Tool"><!-- #ECF7FF -->
-	  <hr size="3" color="red">  <h3 style="align:center;padding:1%;font-size:1.3em;margin-top:-2%;">Music Player Tool<h3>
-		
-</div>		
-		
- <div class="col1" style="background:none;width:100%;">
- 	<hr size="3" color="red">
-<p class="p" style="font-size:.9em;text-align:center;background-color:#3F3A54;color:white">
-Last updated: 04/25/2017    &#169 All rights reserved. Site by Mulugeta Semework. 
-<a href="/Users/mulugetasemework/Documents/MuluSite/MuluHome.html" target="_blank" >
-<strong style="font-size:.9em;background-color:white;"> Go to Homepage </strong></a></p>
-
-
-</div>
-</body>
+   <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Mulugeta Semework Abebe website">
+      <meta name="keywords" content="Mulugeta Semework Abebe">
+   <body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;">
+      <link rel="stylesheet" type="text/css" href="/Users/mulugetasemework/Documents/MuluSite/MulugetaStyle.css">
+      <div style="background-color:white;z-index:-1;width:100%;height:100%;align:center;margin-top:-2%;">
+         <div class="col1" style="z-index: 2;width:100%;background-color:092012;margin:0;padding:0;">
+            <p style="color:gold;font-size:1.6em;align:center;text-align:center;text-justify:center;margin-bottom:-0.5%;"> <strong style="color:red;font-size:1.6em;">Side Projects </strong></strong>   </p>
+         </div>
+      </div>
+      <div id="wrapper" align="center" style="background-color:gold;margin-top:-2%;">
+         <input class="buttons" value="Home" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluHome.html' " >
+         <input class="buttons"  value="Science" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluScience.html' ">
+         <input class="buttons"  value="Art" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluArt.html' ">
+         <input class="buttons"  value="Publications" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluPublications.html' ">
+         <input class="buttons" style="background-color:red; color:white;"  value="Side Projects" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluSideProects.html' ">
+         <input class="buttons"  value="About" onclick="window.location.href='/Users/mulugetasemework/Documents/MuluSite/MuluContact.html' ">
+      </div>
+      <h3 style="padding-top:1%;background-color:#F1E0E0;color:#FF7B78;font-size:1.6em;margin-top:-0.5%;">My delightful destructions ... </h3>
+      </head>
+      <hr size="1" color="red">
+      <div style="background-color:white;z-index:-1">
+         <div id="wrapper" align="center"   style="background-color: none;text-align:center;align:center;color:green;">
+            <!-- #FFC2C2 -->
+            <input class="buttonsTiny" value="Finance Tool" type="submit" class="submit" onclick="location.href = '#Finance Tool'" name="action" >
+            <input class="buttonsTiny" value="MRI Tool" type="submit" class="submit" onclick="location.href = '#MRI Tool'" name="action" >
+            <input class="buttonsTiny" value="Eye Tracking Tool"  type="submit" class="submit" onclick="location.href = '#Eye Tracking Tool'" name="action" >
+            <input class="buttonsTiny" value="Music Player Tool"  type="submit" class="submit" onclick="location.href = '#Music Player Tool'" name="action" >
+         </div>
+      </div>
+      <hr size="3" color="red">
+      <div class="emptyGallery" style="background-color:none;border:none;width:85%;align:center;font-size:1.3em;" id="Finance Tool">
+         <!-- #DAF5B8 -->
+         <h3 style="align:center;padding:1%;font-size:1.3em;margin-top:-2%;">
+            Finance Tool
+            <strong  style="color:#FF7B78;font-size:.8em;margin-top:-5%;">       - - - -  -    -   -  Calculate your investment prospects here </strong>   		
+            <p class="p" style="text-align:justify;background-color:white;color:#0A0D29;font-size:.7em;">How much could  <strong class="YOUS" style="font-size:1.3em;"> 
+               you </strong> and the <strong class="IRSS" style="font-size:1.2em;color:red;">IRS </strong> make? Check here! ( Type in your inputs or use the sliders)   
+               <a href="/Users/mulugetasemework/DocumentsMuluSite/Muluhelper.html" style="font-size:.7em;">   
+               (Click here for more help or read text below) </a>
+               For more information about financial terms, compounding, net income, etc.
+               <a href="/Users/mulugetasemework/Documentshttp://www.investopedia.com/" style="font-size:.7em;">  
+               Click here and go to Investopedia </a>
+            </p>
+            </p>
+         </h3>
+      </div>
+      </head>
+      <div class="emptyGallery" style="background-color:none;border:none;width:85%;align:center;z-index:16;" id="Finance Tool">
+         <!-- #DAF5B8 -->
+         <div class="col1" style="background:none;width:50%;margin-top:-4%;background:#3F3A54;z-index:25;">
+            <div class="col1" style="width:28%;background:#3F3A54;z-index:25;">
+               <br/>
+               <br/>
+               <p style="font-size:1.3em;color:white;">
+                  Investment (US$) = <span id="InvestmentSpan" aria-valuenow="1" aria-valuemin="1" 
+                     aria-valuemax="100000000" role="slider">1</span>
+                  <br/>
+                  <input type="range" class="InvestmentSlider" min="1" max="100000000" value="1" 
+                     step="1" onChange="InvestChange(this.value)" />
+                  <br/>
+                  <input type="number" id="InvestmentIn" value="1" min="1" max="100000000" 
+                     onChange="InvestChange(this.value)" />
+                  <br/>
+                  <br/>
+                  Interest (%) = <span id="InterestSpan" aria-valuenow="3" aria-valuemin="1" 
+                     aria-valuemax="1000" role="slider">1</span>
+                  <br/>
+                  <input type="range" class="InterestInSlider" min="1" max="1000" value="3" 
+                     step="1" onChange="InterestChange(this.value)" />
+                  <br/>
+                  <input type="number" id="InterestIn" value="1" min="1" max="1000" 
+                     onChange="InterestChange(this.value)" />
+                  <br/>
+                  <br/>
+                  Tax (%) = <span id="taxSpan" aria-valuenow="40" aria-valuemin="1" 
+                     aria-valuemax="100" role="slider">40</span>
+                  <br/>
+                  <input type="range" class="taxSlider" min="1" max="100" value="40" 
+                     step="1" onChange="taxChange(this.value)" />
+                  <br/>
+                  <input type="number" id="taxIn" value="40" min="1" max="100" 
+                     onChange="taxChange(this.value)" />
+                  <br/>
+                  <br/>
+               </p>
+            </div>
+            <!--  <hr size="1" color="red" margin="0%"> -->
+            <div class="col1" style="background:none;width:28%;z-index:15;">
+               <!--  <hr size="1" color="red" margin="0%"> -->
+               <h3 style="align:center;padding:1%;"></h3>
+               <p style="font-size:1.3em;color:white">
+                  Compound frequency <br/> per year (%) = <span id="CompSpan" aria-valuenow="1" aria-valuemin="1" 
+                     aria-orientation="vertical" aria-valuemax="2920" role="slider" >1</span>
+                  <br/>
+                  <input type="range" class="CompSlider" min="1" max="2920" value="1" 
+                     step="1" onChange="CompChange(this.value)" />
+                  <br/>
+                  <input type="number" id="CompIn" value="1" min="1" max="2920" 
+                     onChange="CompChange(this.value)" />
+                  <br/>
+                  (or click <span  >below)</span>
+                  <br/>
+               <p>
+               <form name = "f1" style="font-size:1.3em;color:white">
+                  <input type = "radio" name = "r1" value = "Off" onclick="GetSelectedItem5(this)" >5 days a week
+                  <br/>
+                  <input type = "radio" name = "r1" value = "Off" onclick ="GetSelectedItem3(this)">3 days a week
+                  <br/>
+                  <input type = "radio" name = "r1" value = "Off" onclick ="GetSelectedItemWeek(this)">Weekly
+                  <br/>
+                  <input type = "radio" name = "r1" value = "Off" onclick ="GetSelectedItemFortnight(this)">Every 2 weeks
+                  <br/>
+                  <input type = "radio" name = "r1" value = "Off" onclick ="GetSelectedItemMonth(this)">Monthly
+                  <br/>
+                  <input type = "radio" name = "r1" value = "Off" onclick ="GetSelectedItemQuarter(this)">Quarterly
+                  <br/>
+                  <input type = "radio" name = "r1" value = "Off" onclick ="GetSelectedItem6Month(this)">Twice a year
+                  <br/>
+                  <input type = "radio" name = "r1" value = "Off" onclick ="GetSelectedItemYear(this)">Once a year
+               </form>
+               <br/>
+               </p>
+            </div>
+            <div class="col1" style="background:none;width:28%;z-index:15;">
+               <!--  <hr size="1" color="red" margin="0%"> -->
+               <h3 style="align:center;padding:1%;"></h3>
+               <h5  style="font-size:1.4em;color:white">
+                  <strong id="YOUS">Your </strong> income  (US$) =  <span id="YourIncomes" style="color:gold;">0</span> 
+               </h5>
+               <h6  style="font-size:1.4em;color:white">
+                  <strong id="IRSS">IRS</strong> takes (US$) =  <span id="IRSgets" style="color:red;">0</span> 
+               </h6>
+               <br/>
+               <script id="calculateReturn" type="text/javascript">
+                  var investment =1;
+                  var interest = 1;
+                  var tax = 40;
+                  var compound = 1;
+                  
+                  
+                   MyIncome = function(investment, interest, tax,compound) 
+                   {
+                  
+                  	this.investment = investment;
+                  	this.interest = interest;
+                  	this.tax = tax;
+                  	this.compound = compound;
+                  		var yourRealIncome2 = this.investment;
+                  		var IRSIncome2 = 0;
+                  		var thisReturn2 = 0;
+                  	yourRealIncomes = function() 
+                  	 {
+                  		for (var i = 1; i < this.compound; i+=1) 
+                  				{
+                  				thisReturn2 = yourRealIncome2 + (yourRealIncome2*(this.interest/100));
+                  // 					var thisTax2 = thisReturn2 * (this.tax/100);
+                  				//var thisReturn -= thisReturn2 * (this.tax/100);
+                  				yourRealIncome2 += (thisReturn2 - (thisReturn2 * (this.tax/100)));
+                  				IRSIncome2 += (thisReturn2 * (this.tax/100));
+                  			//	alert([this.compound,  parseFloat(yourRealIncome2).toFixed(2),i]);	
+                  
+                  // 					document.getElementById('YourIncomes').innerHTML = yourRealIncome2;
+                  // 					document.getElementById('IRSgets').innerHTML = parseInt(IRSIncome2);	
+                  
+                  				//alert([this.compound, i]);		
+                  				//return yourRealIncome2;
+                  			  }
+                  				document.getElementById('YourIncomes').innerHTML = parseFloat(yourRealIncome2).toFixed(2);
+                  				document.getElementById('IRSgets').innerHTML = parseFloat(IRSIncome2).toFixed(2);	
+                  		//alert([this.investment,this.interest,this.tax,this.compound,yourRealIncome2,i]);				
+                  	   }
+                  
+                  	yourRealIncomes();
+                  	//return yourRealIncome2;
+                  
+                  }	
+                  
+                  MyIncome(investment, interest, tax,compound);
+                  
+                  
+                  self=this;
+                  var InvestChange = function(val) {
+                  
+                  document.getElementById('InvestmentSpan').innerHTML   = parseFloat(val).toFixed(0);;
+                  document.getElementById('InvestmentIn').value   = parseFloat(val).toFixed(0);;
+                  this.tax   = parseFloat(val).toFixed(0);;
+                  MyIncome( parseFloat(val).toFixed(0), self.interest, self.tax,self.compound);
+                  };
+                  
+                  InvestChange.prototype = Object.create(MyIncome.prototype);
+                  
+                  self=this;
+                  var InterestChange = function(val) {
+                  
+                  document.getElementById('InterestSpan').innerHTML   = parseFloat(val).toFixed(0);;
+                  document.getElementById('InterestIn').value   = parseFloat(val).toFixed(0);;
+                  this.interest   = parseFloat(val).toFixed(0);;
+                  MyIncome(self.investment, parseFloat(val).toFixed(0), self.tax,self.compound);
+                  };
+                  
+                  
+                  InterestChange.prototype = Object.create(MyIncome.prototype);
+                  
+                  self=this;
+                  var taxChange = function(val) {
+                  document.getElementById('taxSpan').innerHTML   = parseFloat(val).toFixed(0);;
+                  document.getElementById('taxIn').value   = parseFloat(val).toFixed(0);;
+                  self.tax   = parseFloat(val).toFixed(0);;
+                  MyIncome(self.investment, self.interest,  parseFloat(val).toFixed(0),self.compound);
+                  };
+                  
+                  taxChange.prototype = Object.create(MyIncome.prototype);
+                  
+                  
+                  
+                  self=this;
+                  var CompChange = function(val) {
+                  document.getElementById('CompSpan').innerHTML   = parseFloat(val).toFixed(0);;
+                  
+                  document.getElementById('CompIn').value   = parseFloat(val).toFixed(0);;
+                  self.compound   = parseFloat(val).toFixed(0);;
+                  MyIncome(self.investment, self.interest, self.tax,val);
+                  };
+                  
+                  CompChange.prototype = Object.create(MyIncome.prototype);
+                  
+                  self=this;
+                  function GetSelectedItem5(btnRadio)
+                  {
+                  this.compound = 52*5;
+                  document.getElementById('CompIn').value = 52*5;
+                  document.getElementById('CompSlider').innerHTML= CompChange(52*5);
+                  self.compound = 52*5;
+                  MyIncome(self.investment, self.interest, self.tax,52*5);
+                  };
+                  
+                  GetSelectedItem5.prototype = Object.create(MyIncome.prototype);
+                  
+                  self=this;
+                  function GetSelectedItem3(btnRadio)
+                  {
+                  self.compound = 52*3;
+                  document.getElementById('CompIn').value = 52*3;
+                  document.getElementById('CompSlider').innerHTML= CompChange(52*3);
+                  MyIncome(self.investment, self.interest, self.tax,52*3);
+                  };
+                  GetSelectedItem3.prototype = Object.create(MyIncome.prototype);
+                  
+                  self=this;
+                  function GetSelectedItemWeek(btnRadio)
+                  {
+                  self.compound = 52;
+                  document.getElementById('CompIn').value = 52;
+                  document.getElementById('CompSlider').innerHTML= CompChange(52);
+                  MyIncome(self.investment, self.interest, self.tax,52);
+                  };
+                  
+                  GetSelectedItemWeek.prototype = Object.create(MyIncome.prototype);
+                  self=this;
+                  function GetSelectedItemFortnight(btnRadio)
+                  {
+                  document.getElementById('CompIn').value = 26;
+                  document.getElementById('compoundSlider').value= CompChange(26);
+                  self.compound = 26;
+                  MyIncome(self.investment, self.interest, self.tax,26);
+                  };
+                  GetSelectedItemFortnight.prototype = Object.create(MyIncome.prototype);
+                  
+                  
+                  self=this;
+                  function GetSelectedItemMonth(btnRadio)
+                  {
+                  self.compound = 12;
+                  document.getElementById('CompIn').value = 12;
+                  document.getElementById('compoundSlider').value= CompChange(12);
+                  MyIncome(self.investment, self.interest, self.tax,12);
+                  };
+                  
+                  GetSelectedItemMonth.prototype = Object.create(MyIncome.prototype);
+                  
+                  self=this;
+                  function GetSelectedItemQuarter(btnRadio)
+                  {
+                  document.getElementById('CompIn').value = 4;
+                  document.getElementById('compoundSlider').value= CompChange(4);
+                  self.compound = 4;
+                  MyIncome(self.investment, self.interest, self.tax,4);
+                  };
+                  GetSelectedItemQuarter.prototype = Object.create(MyIncome.prototype);
+                  
+                  self=this;
+                  function GetSelectedItem6Month(btnRadio)
+                  {
+                  document.getElementById('CompIn').value = 2;
+                  document.getElementById('compoundSlider').value=CompChange(2);
+                  self.compound = 2;
+                  MyIncome(self.investment, self.interest, self.tax,2);
+                  };
+                  GetSelectedItem6Month.prototype = Object.create(MyIncome.prototype);
+                  
+                  self=this;
+                  function GetSelectedItemYear(btnRadio)
+                  {
+                  self.compound = 1;
+                  document.getElementById('CompIn').value = 1;
+                  document.getElementById('compoundSlider').value= CompChange(1);
+                  MyIncome(self.investment, self.interest, self.tax,1);
+                  };
+                  
+                  GetSelectedItemYear.prototype = Object.create(MyIncome.prototype);
+               </script>
+            </div>
+            <div class="col1" style="background-color:#FFFAF1;border:none;align:center;width:100%;margin :0%;z-index:2">
+               <p class="p" text-align="justify" style="background-color:#FFFAF1;padding-left:-2%;">
+                  <br/><br/>
+                  You can also click on the dials at the bottom of the page to play with your return 
+                  (income recalculation, or compounding) frequency.
+                  <br/><br/>
+                  By adjusting the above values (parameters) your net income can be adjusted and it is 
+                  displayed at the bottom of the screen as: "Your income". 
+               </p>
+            </div>
+         </div>
+         <div class="col1" style="background-color:#FFFAF1;border:none;align:center;width:40%;margin-top:-4%;z-index:2">
+            <hr size="1" color="red">
+            <p class="p" text-align="justify" style="background-color:#FFFAF1;">
+               This is a program that calculates your financial gain based on a few parameters.
+               In short, you invest a given amount of money in the stock market and you wait for 
+               the price to go up or down. 
+               <br/><br/>
+               In our program, you can slide the circle, or type your amount, or use the up and down 
+               arrows in the first field (above: Investment (US$) =).
+               <br/><br/>
+               Then, depending on the number of day, days, weeks, months, etc.
+               that the investment is priced again, you will get a return (more money) or a loss (your investment
+               is not giving a good result). There is a limited amount of money that your investment grows 
+               by, which is called "interest rate". For instance, if you invested 100 dollars and in 
+               a week you gain 3 more dollars, your interest rate is 3 percent (%).
+               <br/><br/>
+               You can change this rate by using the slider/arrows/ or typing in the area above:Interest (%).
+               <br/><br/>
+               Obviously, you have to pay a certain amount of money to the government from this income, 
+               in what is called "tax". 
+               <br/><br/>
+               The bottom slider adjusts how often your money grows per a given time (in this case a year.)
+               This is called compound frequency. More numbers mean more money for you and the tax collector.
+               <br/><br/>
+            </p>
+         </div>
+      </div>
+      <div style="background-color:#FFFCE7;z-index:-1;width:85%;margin-left:auto;margin-right:auto;" id="MRI Tool">
+         <!-- #ECF7FF -->
+         <hr size="3" color="red">
+         <h3 style="align:center;padding:1%;font-size:1.3em;margin-top:-2%;">
+         MRI Tool
+         <h3>
+      </div>
+      <div style="background-color:#FFFCE7;z-index:-1;width:85%;margin-left:auto;margin-right:auto;" id="EYE Tracking Tool">
+         <!-- #ECF7FF -->
+         <hr size="3" color="red">
+         <h3 style="align:center;padding:1%;font-size:1.3em;margin-top:-2%;">
+         EYE Tracking Tool
+         <h3>
+      </div>
+      <div style="background-color:#FFFCE7;z-index:-1;width:85%;margin-left:auto;margin-right:auto;" id="Music Player Tool">
+         <!-- #ECF7FF -->
+         <hr size="3" color="red">
+         <h3 style="align:center;padding:1%;font-size:1.3em;margin-top:-2%;">
+         Music Player Tool
+         <h3>
+      </div>
+      <div class="col1" style="background:none;width:100%;">
+         <hr size="3" color="red">
+         <p class="p" style="font-size:.9em;text-align:center;background-color:#3F3A54;color:white">
+            Last updated: 04/25/2017    &#169 All rights reserved. Site by Mulugeta Semework. 
+            <a href="/Users/mulugetasemework/Documents/MuluSite/MuluHome.html" target="_blank" >
+            <strong style="font-size:.9em;background-color:white;"> Go to Homepage </strong></a>
+         </p>
+      </div>
+   </body>
 </html>
-
