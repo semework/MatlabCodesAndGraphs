@@ -1,1200 +1,1000 @@
 <!DOCTYPE html>
-
 <html>
-
-<meta charset="utf-8">
-<body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;">
-<style>
-
-body {
-  padding: 30px;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-a {
-  display: inline-block;
-  margin-bottom: 20px;
-  color: #000;
- font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-
-
-.container1, .container1:before {
-    width:95%;
-}
-
-
-.fullscreenDiv {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #002b7F;
-    z-index: -10;
-  }
-
-.container1 {
-    float:left;
-
-}
-.col1, .col1:before {
-    width:28%;
-}
-.col1 {
-    float:left;
- background:#DAF5B8;
-      font-size:90%;
-      color: black;
-      word-wrap: none;
-      font-style: bold;
-      margin:0%;
-      text-justify: left;
-      text-align:left;
-     text-indent: 0px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
- padding: 2%;
-      content: '';
-    position: relative;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    left: 0;
-    	height:35%;
-}
-.col2, .col2:before {
-    width:28%;
-}
-.col2 {
-    float:left;
-
-      	height:35%;
-    background:#FFFDC0;
-          font-size:70%;
-      color: black;
-      word-wrap: none;
-      font-style: bold;
-      margin:0%;
-      text-justify: left;
-      text-align:left;
-     text-indent: 0px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-       padding: 2%;
-          content: '';
-      position: relative;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    
-}
-.col3, .col3:before {
-    width:28%;
-}
-.col3 {
-	height:35%;
-    float:left;
-    background:#FFE8E8;
-              font-size:70%;
-      color: black;
-      word-wrap: none;
-      font-style: bold;
-      margin:0%;
-      text-justify: left;
-      text-align:left;
-     text-indent: 0px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-        padding: 2%;
-          content: '';
-     position: relative;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-   
-}
-
-
-h33 {
-      font-size:80%;
-      color:white;
-      font-style: italic;
-      border: 1px dotted;
-      background-color:blue;
-      margin:0%;
-      text-align:center;
-      text-indent: 0px;
-     font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-h13 {
-      font-size:115%;
-      color: red;
-      word-wrap: none;
-      font-style: bold;
-      background-color:white;
-      margin:0%;
-      text-justify: center;
-      text-align:center;
-   text-indent: 0px;
-
-  margin: 0 0 30px;
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-
-h3 {
-  text-align: center;
-   font-size:1.em;
-   color:red;
-  margin: 0;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-text-shadow: 0px 0px 50px white;
-
-}
-
-
-h3top {
-  text-align: center;
-   font-size:1.2em;
-   color:red;
-  margin: 0;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-text-shadow: 0px 70px 50px white;
-
-}
-
-
-.divGallery {
-border: 4px groove gold;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; /* space-between or space-around */
-  display: flex;
-  padding: 1px 1px;
-  box-sizing: border-box;
-   justify-content: space-around; /* space-between or space-around */
-   align:center;
-	text-align:center;
-}
-
-.emptyGallery {
-align:center;
-	text-align:center;
-display: flex;
-    padding: 1px 1px;
-    box-sizing: border-box; 
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-              font-size:80%;
-              	border: 4px groove gold;
-	left:1px;
-	top: 1px;
-	bottom: 1px;
-	padding: 1%;
-	text-align:left;
-	text-indent: 0px;
-	width:95%;
-	height:95%;
-	margin:0 auto;
-	font-size:1em;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-.textGallery {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    padding: 1px 1px;
-    box-sizing: border-box;
-    width:80%;
-    height:80%;
-    border:1px ridge blue;
-text-align:left;
-      font-size:80%;
-}
-
-a {
-  display: inline-block;
-  margin-bottom: 8px;
-  margin-right: 8px;
-  width: calc(30% - 4px);
-  text-decoration: none;
-  color: blue;
-  text-align: center;
-  font-size:90%;
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-@media screen and (min-width: 50em) {
-  a {
-    width: calc(25% - 6px);
-  }
-}
-
-a:hover img {
-  transform: scale(1.05);
-}
-
-figure {
-  margin: 0;
-  overflow: hidden;
-}
-
-figcaption {
-  margin-top: 2px;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-img {
-  border:1px ridge blue;
-  max-width: 100%;
-  max-height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  display: block;
-  background: #ccc;
-  transition: transform .2s ease-in-out;
-  align:center;
-}
-
-.p a {
-  display: inline;
-  font-size: small;
-  margin: 0;
-  color: blue;
-  font-size:large;
-  text-decoration:underline;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size:75%;
-}
-
-
-.p {
-  text-align:left;
-  font-size:1.1em;
-  padding-top: 2px;
-
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-.pStrong {
-  text-align:left;
-  font-size:1.2em;
-  padding-top: 2px;
-
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-.buttons {
-display: inline-block;
- background-color:#f7efcf;
-/*  #ccac00;  *//* #7792C8;  */
-  border-radius: 20%;
-  box-shadow: 10px 5px red;
-  border: 2px solid gold;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  box-shadow: 0px 3px 6px #7C96CA;/* b2bfd8; */
-/*    0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
-	width:9%;
-	height:auto;
-  padding:0%;
- 
-  left:15%;
-  font-size:1.1em;
-  color:black;
-  text-align:center;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-text-shadow: 0px 2px 2px  white;
-}
-
-
-.buttons:hover {
-    background-color: #f76f7b; 
-    color: white;
-    transform: scale(1.05);
-}
-.buttons:active {
-
- box-shadow: 0 10px #f76f7b;
- border: 5px solid red;
- border-radius: 15%;
- text-decoration: underline;
- background-color: red;
- font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-a:active buttons {
-  transform: scale(2.15);
-  background-color: #f76f7b;
-  border: 5px solid red;
-  border-radius: 85%;
-  border: 2px solid rgb(33,4,192);
-}
-
-.hoverColor
-  background-color: rgb(200, 100, 110);
-  border-radius: 15%;
-  box-shadow: 0 5px red;
-  border: 4px solid magenta;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  width:10%;
-  height:10%;
-  padding:1%;
-  left:15%;
-}
-
-.active{
-    background:red;
-  	border-radius: 15%;
-    }
- buttons.btn:active{
-     background:red;
- }
-
-
-.buttons:visited {
-    color: white;
-}
-.buttons::link {
-    color: rgb(200, 200, 110);
-}
-
-.buttonsTiny {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	display: inline-block;
-  background-color: #325598;
-  border-radius: 20%;
-  box-shadow: 0 5px red;
-  border: 2px solid rgb(255,255,0);
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
- font-size:.9em;
-  color:white;
-  text-align:center;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-
- 
-}
-
-.buttonsTiny:hover {
-    background-color: red; 
-    color: white;
-    transform: scale(1.05);
-}
-
-.buttonsTiny:visited {
-    background-color: red; 
-    color: yellow;
-    transform: scale(1.05);
-}
-
-a:active buttonsTiny {
-  transform: scale(2.15);
-  background-color: red;
-  border: 5px solid red;
-  border-radius: 85%;
-  border: 2px solid rgb(33,4,192);
-}
-
-
-
-
-.buttonsBio {
-display: inline-block;
-  background-color: white;
-  border-radius: 20%;
-  box-shadow: 5px 2px black;
-  border: 2px solid #665600;/* #e5e9f2; */
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-/*   box-shadow: 0 2px 3px 0 #ffeb7f, 0 2px 2px 0 #ffeb7f; */
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 1px 5px 0 #e5c100;
-	width: 20%;
-	height:inherit;
- padding:.05%;
-   padding-right:0%;
-overflow: visible;
-  font-size:.9em;
-  color:black;
-  margin-bottom:.5%;
-  margin-top:0%;
-  text-align:center;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-text-shadow: 0px 10px 10px white;
-  text-align  : center;
-      -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-
-.buttonsBio:hover {
-    background-color: red; 
-    color: white;
-    transform: scale(1.05);
-}
-.buttonsBio:active {
-
- box-shadow: 0 10px red;
- border: 5px solid red;
- border-radius: 15%;
- text-decoration: underline;
- background-color: red;
- font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-a:active buttonsBio {
-  transform: scale(2.15);
-  background-color: red;
-  border: 5px solid red;
-  border-radius: 85%;
-  border: 2px solid rgb(33,4,192);
-}
-
-.buttonsBioSmall {
-display: inline-block;
-  background-color: white;
-  border-radius: 20%;
-  box-shadow: 3px 5px black;
-  border: 2px solid #b29600;/* #e5e9f2; */
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	width: 45%;
-	height:auto;
- padding:.05%;
-   padding-right:1%;
-overflow: visible;
-  font-size:1em;
-  color:black;
-  margin-bottom:2%;
-  margin-top:-5%;
-  text-align:center;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-text-shadow: 0px 10px 10px white;
-  text-align  : center;
-      -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
-}
-
-
-
-.buttonsBioSmall:hover {
-    background-color: red; 
-    color: white;
-    transform: scale(1.05);
-}
-.buttonsBioSmall:active {
-
- box-shadow: 0 5px red;
- border: 5px solid red;
- border-radius: 15%;
- text-decoration: underline;
- background-color: red;
- font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-a:active buttonsBioSmall {
-  transform: scale(2.15);
-  background-color: red;
-  border: 5px solid red;
-  border-radius: 85%;
-  border: 2px solid rgb(33,4,192);
-}
-
-
-
-.image { 
-   position: relative; 
-   width: 100%; /* for IE 6 */
-}
-
-h2 { 
-   position: absolute; 
-   top: 200px; 
-   left: 0; 
-   width: 100%; 
-}
-.buttonsSmall {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	display: inline-block;
-	background-color: #6C54F0;
-	border-radius: 100%;
-	box-shadow: 0 5px red;
-	border: 2px solid rgb(255,255,0);
-	-webkit-transition-duration: 0.4s; /* Safari */
-	transition-duration: 0.4s;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	width:10%;
-	height:5px;
-	padding:3%;
-	left:15%;
-	font-size:105%;
-	color:white;
-	text-align:center;
-}
-}
-.buttonsSmall:hover {
-
-    background-color: red; 
-    color: white;
-    transform: scale(1.05);
-}
-.buttonsSmall:active {
- 
- box-shadow: 0 10px red;
- border: 5px solid red;
- border-radius: 45%;
- text-decoration: underline;
- background-color: red;
-}
-
-a:active buttonsSmall {
-  transform: scale(2.15);
-  background-color: red;
-  border: 5px solid red;
-  border-radius: 85%;
-  border: 2px solid rgb(33,4,192);
-}
-
-.hoverColor
-  background-color: rgb(200, 100, 110);
-  border-radius:55%;
-  box-shadow: 0 5px red;
-  border: 4px solid magenta;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  width:10%;
-  height:10%;
-  padding:1%;
-  left:15%;
-
-}
-
-.active{
+   <meta charset="utf-8">
+   <body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;">
+      <style>
+         body {
+         padding: 30px;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         a {
+         display: inline-block;
+         margin-bottom: 20px;
+         color: #000;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         .container1, .container1:before {
+         width:95%;
+         }
+         .fullscreenDiv {
+         position: fixed;
+         width: 100%;
+         height: 100%;
+         left: 0;
+         top: 0;
+         background: #002b7F;
+         z-index: -10;
+         }
+         .container1 {
+         float:left;
+         }
+         .col1, .col1:before {
+         width:28%;
+         }
+         .col1 {
+         float:left;
+         background:#DAF5B8;
+         font-size:90%;
+         color: black;
+         word-wrap: none;
+         font-style: bold;
+         margin:0%;
+         text-justify: left;
+         text-align:left;
+         text-indent: 0px;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         padding: 2%;
+         content: '';
+         position: relative;
+         top: 0;
+         bottom: 0;
+         z-index: -1;
+         left: 0;
+         height:35%;
+         }
+         .col2, .col2:before {
+         width:28%;
+         }
+         .col2 {
+         float:left;
+         height:35%;
+         background:#FFFDC0;
+         font-size:70%;
+         color: black;
+         word-wrap: none;
+         font-style: bold;
+         margin:0%;
+         text-justify: left;
+         text-align:left;
+         text-indent: 0px;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         padding: 2%;
+         content: '';
+         position: relative;
+         top: 0;
+         bottom: 0;
+         z-index: -1;
+         }
+         .col3, .col3:before {
+         width:28%;
+         }
+         .col3 {
+         height:35%;
+         float:left;
+         background:#FFE8E8;
+         font-size:70%;
+         color: black;
+         word-wrap: none;
+         font-style: bold;
+         margin:0%;
+         text-justify: left;
+         text-align:left;
+         text-indent: 0px;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         padding: 2%;
+         content: '';
+         position: relative;
+         top: 0;
+         bottom: 0;
+         z-index: -1;
+         }
+         h33 {
+         font-size:80%;
+         color:white;
+         font-style: italic;
+         border: 1px dotted;
+         background-color:blue;
+         margin:0%;
+         text-align:center;
+         text-indent: 0px;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         h13 {
+         font-size:115%;
+         color: red;
+         word-wrap: none;
+         font-style: bold;
+         background-color:white;
+         margin:0%;
+         text-justify: center;
+         text-align:center;
+         text-indent: 0px;
+         margin: 0 0 30px;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         h3 {
+         text-align: center;
+         font-size:1.em;
+         color:red;
+         margin: 0;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         text-shadow: 0px 0px 50px white;
+         }
+         h3top {
+         text-align: center;
+         font-size:1.2em;
+         color:red;
+         margin: 0;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         text-shadow: 0px 70px 50px white;
+         }
+         .divGallery {
+         border: 4px groove gold;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-around; /* space-between or space-around */
+         display: flex;
+         padding: 1px 1px;
+         box-sizing: border-box;
+         justify-content: space-around; /* space-between or space-around */
+         align:center;
+         text-align:center;
+         }
+         .emptyGallery {
+         align:center;
+         text-align:center;
+         display: flex;
+         padding: 1px 1px;
+         box-sizing: border-box; 
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         font-size:80%;
+         border: 4px groove gold;
+         left:1px;
+         top: 1px;
+         bottom: 1px;
+         padding: 1%;
+         text-align:left;
+         text-indent: 0px;
+         width:95%;
+         height:95%;
+         margin:0 auto;
+         font-size:1em;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         .textGallery {
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         padding: 1px 1px;
+         box-sizing: border-box;
+         width:80%;
+         height:80%;
+         border:1px ridge blue;
+         text-align:left;
+         font-size:80%;
+         }
+         a {
+         display: inline-block;
+         margin-bottom: 8px;
+         margin-right: 8px;
+         width: calc(30% - 4px);
+         text-decoration: none;
+         color: blue;
+         text-align: center;
+         font-size:90%;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         @media screen and (min-width: 50em) {
+         a {
+         width: calc(25% - 6px);
+         }
+         }
+         a:hover img {
+         transform: scale(1.05);
+         }
+         figure {
+         margin: 0;
+         overflow: hidden;
+         }
+         figcaption {
+         margin-top: 2px;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         img {
+         border:1px ridge blue;
+         max-width: 100%;
+         max-height: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         display: block;
+         background: #ccc;
+         transition: transform .2s ease-in-out;
+         align:center;
+         }
+         .p a {
+         display: inline;
+         font-size: small;
+         margin: 0;
+         color: blue;
+         font-size:large;
+         text-decoration:underline;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         font-size:75%;
+         }
+         .p {
+         text-align:left;
+         font-size:1.1em;
+         padding-top: 2px;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         .pStrong {
+         text-align:left;
+         font-size:1.2em;
+         padding-top: 2px;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         .buttons {
+         display: inline-block;
+         background-color:#f7efcf;
+         /*  #ccac00;  *//* #7792C8;  */
+         border-radius: 20%;
+         box-shadow: 10px 5px red;
+         border: 2px solid gold;
+         -webkit-transition-duration: 0.4s; /* Safari */
+         transition-duration: 0.4s;
+         box-shadow: 0px 3px 6px #7C96CA;/* b2bfd8; */
+         /*    0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+         width:9%;
+         height:auto;
+         padding:0%;
+         left:15%;
+         font-size:1.1em;
+         color:black;
+         text-align:center;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         text-shadow: 0px 2px 2px  white;
+         }
+         .buttons:hover {
+         background-color: #f76f7b; 
+         color: white;
+         transform: scale(1.05);
+         }
+         .buttons:active {
+         box-shadow: 0 10px #f76f7b;
+         border: 5px solid red;
+         border-radius: 15%;
+         text-decoration: underline;
+         background-color: red;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         a:active buttons {
+         transform: scale(2.15);
+         background-color: #f76f7b;
+         border: 5px solid red;
+         border-radius: 85%;
+         border: 2px solid rgb(33,4,192);
+         }
+         .hoverColor
+         background-color: rgb(200, 100, 110);
+         border-radius: 15%;
+         box-shadow: 0 5px red;
+         border: 4px solid magenta;
+         -webkit-transition-duration: 0.4s; /* Safari */
+         transition-duration: 0.4s;
+         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+         width:10%;
+         height:10%;
+         padding:1%;
+         left:15%;
+         }
+         .active{
          background:red;
          border-radius: 15%;
-    }
- buttonsSmall.btn:active{
-     background:red;
- }
-
-
-.buttonsSmall:visited {
-    color: white;
-}
-.buttonsSmall::link {
-    color: rgb(200, 200, 110);
-}
-
-
-
-
-.mainText {
-	color: blue;
-	display: flex;
-	flex-wrap: wrap;
-	text-indent: 20.0em; 
-	border: 4px groove gold;
-	left:2px;
-	top: 2px;
-	top:2px;
-	bottom: 2px;
-	padding: 5%;
-	text-align:justify;
-	text-indent: 0px;
-	font-size:115%;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-.mainTextWide {
-	color: black;
-	font-size:110%;
-	text-indent: 20.0em; 
-	border: 4px groove gold;
-	left:1px;
-	top: 1px;
-	bottom: 1px;
-	padding: 1%;
-	align:center;
-	text-align:center;
-	text-indent: 0px;
-	width:95%;
-	height:95%;
-	margin:0 auto;
-	font-size:1em;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-
-.container {
-	border: 2px ridge blue;
-	white-space: nowrap;
-	width:90%;
-	height:90%;
-	padding: 1%;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-
-.containerLeft {
- 
-  flex-wrap: wrap;
- 	white-space: wrap;
-  display: flex;
-	border: 2px ridge blue;
-
-	width:40%;
-	height:40%;
-	padding: 1%;
-	align:left;
-	font-size:1em;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-
-.containerRight {
- 
-  flex-wrap: wrap;
-
-	border: 2px ridge blue;
-	white-space: nowrap;
-	width:40%;
-	height:40%;
-	align:right;
-	padding: 1%;
-	font-size:1em;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-
-
-.container2 {
-	border: 3px ridge blue;
-	white-space: nowrap;
-	width:80%;
-	height:100%;
-	padding: 3%;
-}
-.bigFig {
-	border: 1px ridge yellow;
-	white-space: nowrap;
-	width:100%;
-	height:100%;
-	padding: 1%;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-
-.addressText {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    top: 90%;
-    left: 0%;
-    width:100%;
-    height:80%;
-    float:left;
-    color: rgb(10,10,20);
-    font-size:1.25em;
-	border: 4px ridge red ;
-   text-align: left;
-   text-justify: auto;
-   text-indent: 0px;
-	padding:3%;
-	flex-wrap: wrap;
- 	white-space: wrap;
-  display: flex;
-    
-}
-.rightPanel {
-
-color: rgb(100,100,100);
-background-color: rgb(250,245,250);
-font-size: 1.15em;
-border: 4px ridge magenta;
-white-space: nowrap;
-
-float:right;
-}
-
-.publicationText
-{
-color: black;
-
-border: 4px ridge green ;
-    left:1px;
-    top:1px;
-       top:1px;
-   bottom: 1px;
-   padding: 1%;
-
-   text-indent: 0px;
-   word-wrap: none;
-       font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-
-.PaperTitles{
-color: blue;
-text-indent: 0px;
-      font-size:1.10em;
-word-wrap: none;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-.LargeTitles{
-	color: Black;
-	font-size:1.25em;
-	word-wrap: none;
-	text-justify: center;
-	text-align: center;
-}
-
-.links
-{
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	color: blue;
-	text-indent: 0em; 
-	text-indent: 0px;
-	font-size:1.15em;
-}
-
-.linksBig
-
-{
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	color: blue;
-	text-indent: 1px;
-	font-size:1.15em;
-}
-
-.bottomText
-{
-color: blue;
-font-size:1em;
-font-style: italic;
-text-indent: 20.0em; 
-font-family: "Trebuchet MS", Helvetica, sans-serif;
-
-}
-
-.YOUS {
-	color: #0A0296;
-	background-color:white;
-	font-size:1.10em;
-	font-style: italic;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-color:black;
-}
-
-.OURS {
-	color: #0A0296
-	background-color:white;
-	font-size:1.10em;
-	font-style: italic;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-color:black;
-}
-
-.hr-text {
-  line-height: 1em;
-  position: relative;
-  outline: 0;
-  border: 0;
-  color: black;
-  text-align: center;
-  height: 1.5em;
-  opacity: .5;
-  font-size:1em;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  &:before {
-    content: '';
-    // use the linear-gradient for the fading effect
-    // use a solid background color for a solid bar
-    background: linear-gradient(to right, transparent, #818078, transparent);
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    height: 1px;
-  }
-  
-  
-  .heading {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	font-size:1.25em;
-	text-align:center;
-	border-top:2px solid green;
-	border-bottom:2px solid yellow;
-
-}
-
-.heading h81 {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	display:inline-block;
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-weight:100;
-	font-size:1.25em;
-	position:relative;
-	top:18px;
-	background:red;
-	padding:0 12px;
-
-}
-  
-  .photo {
-    text-align: center; /*for centering images inside*/
-    padding:2px;
-}
-.photo img {
-    width: 50px; /*set the width or max-width*/
-    height: auto; /*this makes sure to maintain the aspect ratio*/
-}	
-
-
-hr.line {
-    padding: 0;
-    border: 1px solid;
-    color: #333;
-    text-align: center;
-    text-justify: center;
-}
-
-    .mydiv {
-	background:red;
-    border:10px solid red;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-          font-size:125%;
-}
-  
-
-  
-.crop{
-  height: 50px;
-  width: 50px;
-  overflow: hidden;
-}
-.crop img{
-  width: 100%;
-  height: auto;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-  -ms-transform: translateY(-50%); /* IE 9 */
-  transform: translateY(-50%); /* IE 10, Fx 16+, Op 12.1+ */
-}
-.image-slider-wrapper{
-    overflow: hidden;
-}
-#image_slider{
-    position: relative;
-    height: 280px;
-    padding:0;
-}
-#image_slider li{
-    max-width: 100%;
-    float:left;
-    list-style: none;
-}  
-
-
-#bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
-  z-index:-4;
-}
-#bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 100%;
-  min-height: 100%;
-    z-index:-4;
-}
-
-h1 {text-indent: 2.0em;  
-color:magenta;
-font-size: 40px;
-background-color:black;
-}
-
-h2 {color:white;
-textStyle: italic;
-background-color:black;
-border: 2px dotted;
-margin-left:10.5%;
-margin-right:5%;
-padding:4%;
-width:75%;
-
-position: absolute;
-    left:0px;
-    top: 10px;
-    top:0px;
-    z-index:-1;
-}
-
-h3 {
-
-color:white;
-textStyle: italic;
-border: 1px dotted;
-background-color:black;
-margin:2%;
-}
-
-h5 {
-color:rgb(199 122 133);
-border: 1px dotted;
-font-size: 16px;
-}
-
-h6 {
-color:rgb(120 199 133);
-border: 1px dotted;
-font-size: 16px;
-}
-
-
-
-
-.contentContainerOutside
-{
-background: rgb(180,1,255);
-    position: absolute;
-    top: 90%;
-    left: 0%;
-    width: 100%;
-    height:2%;
-}
-
-
-body {
-background: rgb(200,200,255);
-	position: relative;
-	left: 10%;
-    width: 80%;
-    height: 80%;
-
-}
-
-.mainContainer2
-{
-background: rgb(180,180,255);
-    position: relative;
-  
-   left:7%;
-    width: 89%;
-    height: 75%;
-}
-
-
-
-.contentContainer
-{
-background:  rgb(180,180,255);
-    position: absolute;
-    top: 0%;
-    left: 30%;
-    width: 70%;
-    height: 60%;
-  
-
-}
-
-.mainContainer
-{
-background-color: rgb(180,180,180);
-width:500px;
-height:500px;
-float: left;
-background-color: yellow;
-
-}
-#contentContainer2
-{
-width:200px;
-height:300px;
-float: left;
-background-color:  rgb(170,170,180);
-margin:10px;
-}
-
-#contentContainer3
-{
-
-width:350px;
-height:150px;
-float:right;
-background-color:  rgb(190,202,205);
-margin:5px;
-}
-
-#contentContainer4
-{
-
-
-width:200px;
-height:300px;
-float: left;
-background-color:  rgb(210,190,255);
-left: 400px;
-margin:10px;
-
-}
-
-
-.slidernames
-{
-   position: absolute;
-	left:9%
-  	width: 99%;
-    height:60%;
-color:magenta;
-
-
-.slidernames33
-{
-   position:absolute;
-	left:55%
-  	width: 5%;
-    height:40%;
-background-color:green;
-
-}
-
-
-.YOUS {
-color: red;
-background-color:green;
-font-size: 18px;
-font-style: italic;
-
-}
-
-
-.IRSS {
-color: white;
-background-color:red;
-font-size: 20px;
-font-style: italic;
-
-}
-
-
-.InvestmentSpan {
-border: 3px ridge yellow;
-
-}
-
-.InterestSpan {
-border: 3px ridge green;
-}
-
-.taxSpan {
-border: 3px ridge red;
-}
-
-.compSpan {
-border: 3px ridge magenta;
-color:magenta;
-background-color: rgb(200, 250, 155);
-}
-
-#YourIncomes {
-background-color: rgb(200, 200, 155);
-border: 4px ridge cyan ;
-}
-
-#IRSgets {
-background-color: rgb(155, 200, 200);
-border: 4px ridge red ;
-}
-.titleLater{
-color: megenta;
-
-font-size: 24px;
-font-style: italic;
-}
-
-
-.helplink {
-color: blue;
-font-size: 15px;
-font-style: italic;
-text-indent: 20.0em; 
-}
-
-.investmentInSlider
-{
-    color: yellow;
-	position: absolute;
-   	left: 1%;
-}
-
-.interestSlider
-{
-    background-color: yellow;
-    position: absolute;
-    left: 1%
-}
-
-.compoundSlider
-{
-    background-color: yellow;
-    position: absolute;
-    left: 1%
-   
-  }
-  
-  .taxSlider
-  {
-    color: yellow;
-    position: absolute;
-    left: 1%
-   
-  }
-  
-.investmentIn
-{
-    color: black;
-   
-  }
-
-
-.muluImage {
-position: absolute;
-    left:0px;
-    top: 0px;
-  z-index:-1
-}
-
-.leftContainer {
-position: absolute;
-    left:0px;
-    top: 0px;
-    top:50px;
-  z-index:-1
-}
-
-
-
-</style>
-</body>
+         }
+         buttons.btn:active{
+         background:red;
+         }
+         .buttons:visited {
+         color: white;
+         }
+         .buttons::link {
+         color: rgb(200, 200, 110);
+         }
+         .buttonsTiny {
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         display: inline-block;
+         background-color: #325598;
+         border-radius: 20%;
+         box-shadow: 0 5px red;
+         border: 2px solid rgb(255,255,0);
+         -webkit-transition-duration: 0.4s; /* Safari */
+         transition-duration: 0.4s;
+         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+         font-size:.9em;
+         color:white;
+         text-align:center;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         .buttonsTiny:hover {
+         background-color: red; 
+         color: white;
+         transform: scale(1.05);
+         }
+         .buttonsTiny:visited {
+         background-color: red; 
+         color: yellow;
+         transform: scale(1.05);
+         }
+         a:active buttonsTiny {
+         transform: scale(2.15);
+         background-color: red;
+         border: 5px solid red;
+         border-radius: 85%;
+         border: 2px solid rgb(33,4,192);
+         }
+         .buttonsBio {
+         display: inline-block;
+         background-color: white;
+         border-radius: 20%;
+         box-shadow: 5px 2px black;
+         border: 2px solid #665600;/* #e5e9f2; */
+         -webkit-transition-duration: 0.4s; /* Safari */
+         transition-duration: 0.4s;
+         /*   box-shadow: 0 2px 3px 0 #ffeb7f, 0 2px 2px 0 #ffeb7f; */
+         box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 1px 5px 0 #e5c100;
+         width: 20%;
+         height:inherit;
+         padding:.05%;
+         padding-right:0%;
+         overflow: visible;
+         font-size:.9em;
+         color:black;
+         margin-bottom:.5%;
+         margin-top:0%;
+         text-align:center;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         text-shadow: 0px 10px 10px white;
+         text-align  : center;
+         -webkit-touch-callout: none;
+         -webkit-user-select: none;
+         -khtml-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+         }
+         .buttonsBio:hover {
+         background-color: red; 
+         color: white;
+         transform: scale(1.05);
+         }
+         .buttonsBio:active {
+         box-shadow: 0 10px red;
+         border: 5px solid red;
+         border-radius: 15%;
+         text-decoration: underline;
+         background-color: red;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         a:active buttonsBio {
+         transform: scale(2.15);
+         background-color: red;
+         border: 5px solid red;
+         border-radius: 85%;
+         border: 2px solid rgb(33,4,192);
+         }
+         .buttonsBioSmall {
+         display: inline-block;
+         background-color: white;
+         border-radius: 20%;
+         box-shadow: 3px 5px black;
+         border: 2px solid #b29600;/* #e5e9f2; */
+         -webkit-transition-duration: 0.4s; /* Safari */
+         transition-duration: 0.4s;
+         box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+         width: 45%;
+         height:auto;
+         padding:.05%;
+         padding-right:1%;
+         overflow: visible;
+         font-size:1em;
+         color:black;
+         margin-bottom:2%;
+         margin-top:-5%;
+         text-align:center;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         text-shadow: 0px 10px 10px white;
+         text-align  : center;
+         -webkit-touch-callout: none;
+         -webkit-user-select: none;
+         -khtml-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+         }
+         .buttonsBioSmall:hover {
+         background-color: red; 
+         color: white;
+         transform: scale(1.05);
+         }
+         .buttonsBioSmall:active {
+         box-shadow: 0 5px red;
+         border: 5px solid red;
+         border-radius: 15%;
+         text-decoration: underline;
+         background-color: red;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         a:active buttonsBioSmall {
+         transform: scale(2.15);
+         background-color: red;
+         border: 5px solid red;
+         border-radius: 85%;
+         border: 2px solid rgb(33,4,192);
+         }
+         .image { 
+         position: relative; 
+         width: 100%; /* for IE 6 */
+         }
+         h2 { 
+         position: absolute; 
+         top: 200px; 
+         left: 0; 
+         width: 100%; 
+         }
+         .buttonsSmall {
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         display: inline-block;
+         background-color: #6C54F0;
+         border-radius: 100%;
+         box-shadow: 0 5px red;
+         border: 2px solid rgb(255,255,0);
+         -webkit-transition-duration: 0.4s; /* Safari */
+         transition-duration: 0.4s;
+         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+         width:10%;
+         height:5px;
+         padding:3%;
+         left:15%;
+         font-size:105%;
+         color:white;
+         text-align:center;
+         }
+         }
+         .buttonsSmall:hover {
+         background-color: red; 
+         color: white;
+         transform: scale(1.05);
+         }
+         .buttonsSmall:active {
+         box-shadow: 0 10px red;
+         border: 5px solid red;
+         border-radius: 45%;
+         text-decoration: underline;
+         background-color: red;
+         }
+         a:active buttonsSmall {
+         transform: scale(2.15);
+         background-color: red;
+         border: 5px solid red;
+         border-radius: 85%;
+         border: 2px solid rgb(33,4,192);
+         }
+         .hoverColor
+         background-color: rgb(200, 100, 110);
+         border-radius:55%;
+         box-shadow: 0 5px red;
+         border: 4px solid magenta;
+         -webkit-transition-duration: 0.4s; /* Safari */
+         transition-duration: 0.4s;
+         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+         width:10%;
+         height:10%;
+         padding:1%;
+         left:15%;
+         }
+         .active{
+         background:red;
+         border-radius: 15%;
+         }
+         buttonsSmall.btn:active{
+         background:red;
+         }
+         .buttonsSmall:visited {
+         color: white;
+         }
+         .buttonsSmall::link {
+         color: rgb(200, 200, 110);
+         }
+         .mainText {
+         color: blue;
+         display: flex;
+         flex-wrap: wrap;
+         text-indent: 20.0em; 
+         border: 4px groove gold;
+         left:2px;
+         top: 2px;
+         top:2px;
+         bottom: 2px;
+         padding: 5%;
+         text-align:justify;
+         text-indent: 0px;
+         font-size:115%;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         .mainTextWide {
+         color: black;
+         font-size:110%;
+         text-indent: 20.0em; 
+         border: 4px groove gold;
+         left:1px;
+         top: 1px;
+         bottom: 1px;
+         padding: 1%;
+         align:center;
+         text-align:center;
+         text-indent: 0px;
+         width:95%;
+         height:95%;
+         margin:0 auto;
+         font-size:1em;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         .container {
+         border: 2px ridge blue;
+         white-space: nowrap;
+         width:90%;
+         height:90%;
+         padding: 1%;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         .containerLeft {
+         flex-wrap: wrap;
+         white-space: wrap;
+         display: flex;
+         border: 2px ridge blue;
+         width:40%;
+         height:40%;
+         padding: 1%;
+         align:left;
+         font-size:1em;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         .containerRight {
+         flex-wrap: wrap;
+         border: 2px ridge blue;
+         white-space: nowrap;
+         width:40%;
+         height:40%;
+         align:right;
+         padding: 1%;
+         font-size:1em;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         .container2 {
+         border: 3px ridge blue;
+         white-space: nowrap;
+         width:80%;
+         height:100%;
+         padding: 3%;
+         }
+         .bigFig {
+         border: 1px ridge yellow;
+         white-space: nowrap;
+         width:100%;
+         height:100%;
+         padding: 1%;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         .addressText {
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         top: 90%;
+         left: 0%;
+         width:100%;
+         height:80%;
+         float:left;
+         color: rgb(10,10,20);
+         font-size:1.25em;
+         border: 4px ridge red ;
+         text-align: left;
+         text-justify: auto;
+         text-indent: 0px;
+         padding:3%;
+         flex-wrap: wrap;
+         white-space: wrap;
+         display: flex;
+         }
+         .rightPanel {
+         color: rgb(100,100,100);
+         background-color: rgb(250,245,250);
+         font-size: 1.15em;
+         border: 4px ridge magenta;
+         white-space: nowrap;
+         float:right;
+         }
+         .publicationText
+         {
+         color: black;
+         border: 4px ridge green ;
+         left:1px;
+         top:1px;
+         top:1px;
+         bottom: 1px;
+         padding: 1%;
+         text-indent: 0px;
+         word-wrap: none;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         .PaperTitles{
+         color: blue;
+         text-indent: 0px;
+         font-size:1.10em;
+         word-wrap: none;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         .LargeTitles{
+         color: Black;
+         font-size:1.25em;
+         word-wrap: none;
+         text-justify: center;
+         text-align: center;
+         }
+         .links
+         {
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         color: blue;
+         text-indent: 0em; 
+         text-indent: 0px;
+         font-size:1.15em;
+         }
+         .linksBig
+         {
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         color: blue;
+         text-indent: 1px;
+         font-size:1.15em;
+         }
+         .bottomText
+         {
+         color: blue;
+         font-size:1em;
+         font-style: italic;
+         text-indent: 20.0em; 
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         }
+         .YOUS {
+         color: #0A0296;
+         background-color:white;
+         font-size:1.10em;
+         font-style: italic;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         font-color:black;
+         }
+         .OURS {
+         color: #0A0296
+         background-color:white;
+         font-size:1.10em;
+         font-style: italic;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         font-color:black;
+         }
+         .hr-text {
+         line-height: 1em;
+         position: relative;
+         outline: 0;
+         border: 0;
+         color: black;
+         text-align: center;
+         height: 1.5em;
+         opacity: .5;
+         font-size:1em;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         &:before {
+         content: '';
+         // use the linear-gradient for the fading effect
+         // use a solid background color for a solid bar
+         background: linear-gradient(to right, transparent, #818078, transparent);
+         position: absolute;
+         left: 0;
+         top: 50%;
+         width: 100%;
+         height: 1px;
+         }
+         .heading {
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         font-size:1.25em;
+         text-align:center;
+         border-top:2px solid green;
+         border-bottom:2px solid yellow;
+         }
+         .heading h81 {
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         display:inline-block;
+         font-family:Georgia, "Times New Roman", Times, serif;
+         font-weight:100;
+         font-size:1.25em;
+         position:relative;
+         top:18px;
+         background:red;
+         padding:0 12px;
+         }
+         .photo {
+         text-align: center; /*for centering images inside*/
+         padding:2px;
+         }
+         .photo img {
+         width: 50px; /*set the width or max-width*/
+         height: auto; /*this makes sure to maintain the aspect ratio*/
+         }	
+         hr.line {
+         padding: 0;
+         border: 1px solid;
+         color: #333;
+         text-align: center;
+         text-justify: center;
+         }
+         .mydiv {
+         background:red;
+         border:10px solid red;
+         font-family: "Trebuchet MS", Helvetica, sans-serif;
+         font-size:125%;
+         }
+         .crop{
+         height: 50px;
+         width: 50px;
+         overflow: hidden;
+         }
+         .crop img{
+         width: 100%;
+         height: auto;
+         position: relative;
+         top: 50%;
+         -webkit-transform: translateY(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+         -ms-transform: translateY(-50%); /* IE 9 */
+         transform: translateY(-50%); /* IE 10, Fx 16+, Op 12.1+ */
+         }
+         .image-slider-wrapper{
+         overflow: hidden;
+         }
+         #image_slider{
+         position: relative;
+         height: 280px;
+         padding:0;
+         }
+         #image_slider li{
+         max-width: 100%;
+         float:left;
+         list-style: none;
+         }  
+         #bg {
+         position: fixed; 
+         top: -50%; 
+         left: -50%; 
+         width: 200%; 
+         height: 200%;
+         z-index:-4;
+         }
+         #bg img {
+         position: absolute; 
+         top: 0; 
+         left: 0; 
+         right: 0; 
+         bottom: 0; 
+         margin: auto; 
+         min-width: 100%;
+         min-height: 100%;
+         z-index:-4;
+         }
+         h1 {text-indent: 2.0em;  
+         color:magenta;
+         font-size: 40px;
+         background-color:black;
+         }
+         h2 {color:white;
+         textStyle: italic;
+         background-color:black;
+         border: 2px dotted;
+         margin-left:10.5%;
+         margin-right:5%;
+         padding:4%;
+         width:75%;
+         position: absolute;
+         left:0px;
+         top: 10px;
+         top:0px;
+         z-index:-1;
+         }
+         h3 {
+         color:white;
+         textStyle: italic;
+         border: 1px dotted;
+         background-color:black;
+         margin:2%;
+         }
+         h5 {
+         color:rgb(199 122 133);
+         border: 1px dotted;
+         font-size: 16px;
+         }
+         h6 {
+         color:rgb(120 199 133);
+         border: 1px dotted;
+         font-size: 16px;
+         }
+         .contentContainerOutside
+         {
+         background: rgb(180,1,255);
+         position: absolute;
+         top: 90%;
+         left: 0%;
+         width: 100%;
+         height:2%;
+         }
+         body {
+         background: rgb(200,200,255);
+         position: relative;
+         left: 10%;
+         width: 80%;
+         height: 80%;
+         }
+         .mainContainer2
+         {
+         background: rgb(180,180,255);
+         position: relative;
+         left:7%;
+         width: 89%;
+         height: 75%;
+         }
+         .contentContainer
+         {
+         background:  rgb(180,180,255);
+         position: absolute;
+         top: 0%;
+         left: 30%;
+         width: 70%;
+         height: 60%;
+         }
+         .mainContainer
+         {
+         background-color: rgb(180,180,180);
+         width:500px;
+         height:500px;
+         float: left;
+         background-color: yellow;
+         }
+         #contentContainer2
+         {
+         width:200px;
+         height:300px;
+         float: left;
+         background-color:  rgb(170,170,180);
+         margin:10px;
+         }
+         #contentContainer3
+         {
+         width:350px;
+         height:150px;
+         float:right;
+         background-color:  rgb(190,202,205);
+         margin:5px;
+         }
+         #contentContainer4
+         {
+         width:200px;
+         height:300px;
+         float: left;
+         background-color:  rgb(210,190,255);
+         left: 400px;
+         margin:10px;
+         }
+         .slidernames
+         {
+         position: absolute;
+         left:9%
+         width: 99%;
+         height:60%;
+         color:magenta;
+         .slidernames33
+         {
+         position:absolute;
+         left:55%
+         width: 5%;
+         height:40%;
+         background-color:green;
+         }
+         .YOUS {
+         color: red;
+         background-color:green;
+         font-size: 18px;
+         font-style: italic;
+         }
+         .IRSS {
+         color: white;
+         background-color:red;
+         font-size: 20px;
+         font-style: italic;
+         }
+         .InvestmentSpan {
+         border: 3px ridge yellow;
+         }
+         .InterestSpan {
+         border: 3px ridge green;
+         }
+         .taxSpan {
+         border: 3px ridge red;
+         }
+         .compSpan {
+         border: 3px ridge magenta;
+         color:magenta;
+         background-color: rgb(200, 250, 155);
+         }
+         #YourIncomes {
+         background-color: rgb(200, 200, 155);
+         border: 4px ridge cyan ;
+         }
+         #IRSgets {
+         background-color: rgb(155, 200, 200);
+         border: 4px ridge red ;
+         }
+         .titleLater{
+         color: megenta;
+         font-size: 24px;
+         font-style: italic;
+         }
+         .helplink {
+         color: blue;
+         font-size: 15px;
+         font-style: italic;
+         text-indent: 20.0em; 
+         }
+         .investmentInSlider
+         {
+         color: yellow;
+         position: absolute;
+         left: 1%;
+         }
+         .interestSlider
+         {
+         background-color: yellow;
+         position: absolute;
+         left: 1%
+         }
+         .compoundSlider
+         {
+         background-color: yellow;
+         position: absolute;
+         left: 1%
+         }
+         .taxSlider
+         {
+         color: yellow;
+         position: absolute;
+         left: 1%
+         }
+         .investmentIn
+         {
+         color: black;
+         }
+         .muluImage {
+         position: absolute;
+         left:0px;
+         top: 0px;
+         z-index:-1
+         }
+         .leftContainer {
+         position: absolute;
+         left:0px;
+         top: 0px;
+         top:50px;
+         z-index:-1
+         }
+      </style>
+   </body>
 </html>
-
